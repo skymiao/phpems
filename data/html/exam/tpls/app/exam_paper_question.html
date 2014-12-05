@@ -1,0 +1,513 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="无纸化模拟考试系统">
+<meta name="description" content="无纸化模拟考试系统">
+<meta name="keywords" content="无纸化模拟考试系统">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>PHPEMS无纸化模拟考试系统</title>
+<link href="app/core/styles/css/bootstrap.css" rel="stylesheet">
+<link href="app/core/styles/css/plugin.css" rel="stylesheet">
+<link href="app/user/styles/css/theme.css" rel="stylesheet" type="text/css" />
+<link href="app/core/styles/css/datetimepicker.css" rel="stylesheet">
+<script type="text/javascript" src="app/core/styles/js/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" href="app/exam/styles/css/mathquill.css" type="text/css">
+<script type="text/javascript" src="app/core/styles/js/jquery-ui.js"></script>
+<script type="text/javascript" src="app/core/styles/js/jquery.json.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="app/core/styles/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
+<script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
+<script src="app/exam/styles/js/plugin.js"></script>
+</head><body>
+<div class="row-fluid topLine">
+	<div class="container-fluid">
+		<div class="span4"></div>
+		<div class="span8">
+			<span class="pull-right">
+						您好（test1）&nbsp;&nbsp;<a href="index.php?user-center"><em class="icon-user"></em> 用户中心</a>&nbsp;&nbsp;<a href="index.php?user-app-logout"><em class="icon-lock"></em> 退出</a>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+			</span>
+		</div>
+	</div>
+</div>
+<div class="row-fluid top">
+	<div class="container-fluid">
+		<div class="span4"><a name="top"></a><h2><img src="app/user/styles/img/theme/logo.png" /></h2></div>
+		<div class="span8">
+			<div class="navbar" id="menuNav">
+				<div class="">
+					<div class="nav-collapse">
+						<ul class="nav pull-right">
+							<li class="mainmenu">
+								<a href="index.php">主页</a>
+							</li>
+							<li class="active mainmenu">
+								<a href="index.php?exam">在线考试</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><div aria-hidden="true" id="modal" class="modal hide fade" role="dialog" aria-labelledby="#myModalLabel">
+	<div class="modal-header">
+		<button aria-hidden="true" class="close" type="button" data-dismiss="modal">×</button>
+		<h3 id="myModalLabel">
+			试题列表
+		</h3>
+	</div>
+	<div class="modal-body" id="modal-body" style="max-height:560px;">
+				    	    	                <dl class="clear">
+        	<dt class="float_l"><b>1、单选题</b></dt>
+            <dd>
+            	                                                            	<a id="sign_8452" href="javascript:;" onclick="javascript:gotoquestion(8452,1);" rel="0" class="badge questionindex">1</a>
+            	                                            	<a id="sign_8453" href="javascript:;" onclick="javascript:gotoquestion(8453,1);" rel="0" class="badge questionindex">2</a>
+            	                                            	<a id="sign_8454" href="javascript:;" onclick="javascript:gotoquestion(8454,1);" rel="0" class="badge questionindex">3</a>
+            	                                            	<a id="sign_8455" href="javascript:;" onclick="javascript:gotoquestion(8455,1);" rel="0" class="badge questionindex">4</a>
+            	                                            	<a id="sign_8456" href="javascript:;" onclick="javascript:gotoquestion(8456,1);" rel="0" class="badge questionindex">5</a>
+            	                                            	<a id="sign_8457" href="javascript:;" onclick="javascript:gotoquestion(8457,1);" rel="0" class="badge questionindex">6</a>
+            	            	            </dd>
+        </dl>
+                    	            	            	            	        	</div>
+	<div class="modal-footer">
+		 <button aria-hidden="true" class="btn" data-dismiss="modal">隐藏</button>
+	</div>
+</div>
+<div class="row-fluid">
+	<div class="container-fluid examcontent">
+		<div class="exambox" id="datacontent">
+			<form class="examform form-horizontal" id="form1" name="form1" method="post" action="index.php?exam-app-exam-score">
+				<ul class="breadcrumb">
+					<li>
+						<span class="icon-home"></span> <a href="index.php?exam">考场选择</a> <span class="divider">/</span>
+					</li>
+					<li>
+						<a href="index.php?exam-app-basics">苹果产品考试</a> <span class="divider">/</span>
+					</li>
+					<li>
+						<a href="index.php?exam-app-exam">正式考试</a> <span class="divider">/</span>
+					</li>
+					<li class="active">
+						近代史课测试					</li>
+				</ul>
+				<h3 class="text-center">近代史课测试</h3>
+																								<div id="panel-type-1" class="questionpanel tab-pane active">
+					<ul class="breadcrumb">
+						<li>
+							<h5>1、单选题</h5>
+						</li>
+					</ul>
+						                	                	                	                <div id="question_8452" class="paperexamcontent">
+						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-info questionindex">1</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:signQuestion('8452',this);"><em class="icon-star-empty" title="标注"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_8452"></a><p>iMac 配备 Retina 5K 的显示屏,分辨率可达______?拥有四倍于标准 27 英寸 iMac 显示屏的像素数量，让你可以在难以想像的宏大画面上，体验一切精妙细节。</p>							</div>
+														<div class="media-body well">
+		                    	<p>A、1920x1080</p>
+
+<p>B、3840x2160</p>
+
+<p>C、5120x2880</p>
+
+<p>D、4096x2160</p>		                    </div>
+							<div class="media-body well">
+		                    				                        			                        			                        <label class="radio inline"><input type="radio" name="question[8452]" rel="8452" value="A" />A </label>
+			                        			                        			                        <label class="radio inline"><input type="radio" name="question[8452]" rel="8452" value="B" />B </label>
+			                        			                        			                        <label class="radio inline"><input type="radio" name="question[8452]" rel="8452" value="C" />C </label>
+			                        			                        			                        <label class="radio inline"><input type="radio" name="question[8452]" rel="8452" value="D" />D </label>
+			                        			                        			                        		                        		                    </div>
+														<div class="media-body well">
+								<div class="btn-group pull-right">
+				            						            						            		<a class="btn" href="javascript:;" onclick="javascript:gotoindexquestion(1,1);" title="下一题">下一题</a>
+													            	</div>
+			            	</div>
+						</div>
+					</div>
+						                	                	                <div id="question_8453" class="paperexamcontent">
+						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-info questionindex">2</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:signQuestion('8453',this);"><em class="icon-star-empty" title="标注"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_8453"></a><p>以下对配备 Retina 5K 显示屏的 iMac 的超凡动力，描述正确的是？</p>							</div>
+														<div class="media-body well">
+		                    	<p>A、标配第四代 3.5GHz 四核 Intel Core i5 处理器 也可以选择我们首次应用于 iMac的 4.0GHz 四核 Intel Core i7 处理器。无论哪一款，都能充分满足你对性能和速度的需求</p>
+
+<p>B、iMac 采用全新的高性能 AMD 图形处理器，拥有高达每秒 3.5 兆次的浮点运算能力，无论你是影片的观赏者还是制作者，是游戏的玩家还是设计家，都能从中获得精彩绝伦的视觉体验</p>
+
+<p>C、Thunderbolt 2，处理能力加倍为每个外设端口提供高达 20 Gbps 的带宽，无论连接外置驱动器、摄录设备、音频和视频设备等各种高性能外设，都能享受畅快的数据传输</p>
+
+<p>D、所有描述都是正确选项</p>		                    </div>
+							<div class="media-body well">
+		                    				                        			                        			                        <label class="radio inline"><input type="radio" name="question[8453]" rel="8453" value="A" />A </label>
+			                        			                        			                        <label class="radio inline"><input type="radio" name="question[8453]" rel="8453" value="B" />B </label>
+			                        			                        			                        <label class="radio inline"><input type="radio" name="question[8453]" rel="8453" value="C" />C </label>
+			                        			                        			                        <label class="radio inline"><input type="radio" name="question[8453]" rel="8453" value="D" />D </label>
+			                        			                        			                        		                        		                    </div>
+														<div class="media-body well">
+								<div class="btn-group pull-right">
+				            						            		<a class="btn" href="javascript:;" onclick="javascript:gotoindexquestion(0,1);" title="上一题">上一题</a>
+				            						            						            		<a class="btn" href="javascript:;" onclick="javascript:gotoindexquestion(2,1);" title="下一题">下一题</a>
+													            	</div>
+			            	</div>
+						</div>
+					</div>
+						                	                	                <div id="question_8454" class="paperexamcontent">
+						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-info questionindex">3</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:signQuestion('8454',this);"><em class="icon-star-empty" title="标注"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_8454"></a><p>以下对配备 Retina 5K 显示屏的 iMac 的Fusion Drive描述错误的是？</p>							</div>
+														<div class="media-body well">
+		                    	<p>A、iMac 标配 1TB Fusion Drive，你可以选择升级至 3TB</p>
+
+<p>B、只能用Fusion Drive 1TB 或 3TB，不能选择其他</p>
+
+<p>C、Fusion Drive 结合了高容量硬盘与高性能闪存，将两者优势集于一身为你所用</p>
+
+<p>D、Fusion Drive 可以自动、智能地管理你的数据，将使用频繁的app、文档、照片和其他文件存储在速度更快的闪存上，不常用的项目移至硬盘</p>		                    </div>
+							<div class="media-body well">
+		                    				                        			                        			                        <label class="radio inline"><input type="radio" name="question[8454]" rel="8454" value="A" />A </label>
+			                        			                        			                        <label class="radio inline"><input type="radio" name="question[8454]" rel="8454" value="B" />B </label>
+			                        			                        			                        <label class="radio inline"><input type="radio" name="question[8454]" rel="8454" value="C" />C </label>
+			                        			                        			                        <label class="radio inline"><input type="radio" name="question[8454]" rel="8454" value="D" />D </label>
+			                        			                        			                        		                        		                    </div>
+														<div class="media-body well">
+								<div class="btn-group pull-right">
+				            						            		<a class="btn" href="javascript:;" onclick="javascript:gotoindexquestion(1,1);" title="上一题">上一题</a>
+				            						            						            		<a class="btn" href="javascript:;" onclick="javascript:gotoindexquestion(3,1);" title="下一题">下一题</a>
+													            	</div>
+			            	</div>
+						</div>
+					</div>
+						                	                	                <div id="question_8455" class="paperexamcontent">
+						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-info questionindex">4</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:signQuestion('8455',this);"><em class="icon-star-empty" title="标注"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_8455"></a><p>以下对顾客购买Mac 的 AppleCare Protection Plan(ACPP) 全方位服务计划主要原因描述错误的是？</p>							</div>
+														<div class="media-body well">
+		                    	<p>A、获得 Apple 专家 3年的一站式技术支持服务</p>
+
+<p>B、将保修服务期限延长至三年（保修涵盖部件费和劳务费）</p>
+
+<p>C、支持电脑区域联保，不能全球保修</p>
+
+<p>D、可以使用方便的维修服务选项</p>		                    </div>
+							<div class="media-body well">
+		                    				                        			                        			                        <label class="radio inline"><input type="radio" name="question[8455]" rel="8455" value="A" />A </label>
+			                        			                        			                        <label class="radio inline"><input type="radio" name="question[8455]" rel="8455" value="B" />B </label>
+			                        			                        			                        <label class="radio inline"><input type="radio" name="question[8455]" rel="8455" value="C" />C </label>
+			                        			                        			                        <label class="radio inline"><input type="radio" name="question[8455]" rel="8455" value="D" />D </label>
+			                        			                        			                        		                        		                    </div>
+														<div class="media-body well">
+								<div class="btn-group pull-right">
+				            						            		<a class="btn" href="javascript:;" onclick="javascript:gotoindexquestion(2,1);" title="上一题">上一题</a>
+				            						            						            		<a class="btn" href="javascript:;" onclick="javascript:gotoindexquestion(4,1);" title="下一题">下一题</a>
+													            	</div>
+			            	</div>
+						</div>
+					</div>
+						                	                	                <div id="question_8456" class="paperexamcontent">
+						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-info questionindex">5</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:signQuestion('8456',this);"><em class="icon-star-empty" title="标注"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_8456"></a><p>Mac mini 是一台能效非凡的台式电脑，性能比上一代有巨大提升，但闲置状态时的耗电量仍然只有___瓦？</p>							</div>
+														<div class="media-body well">
+		                    	<p>A、6</p>
+
+<p>B、13</p>
+
+<p>C、11</p>
+
+<p>D、113</p>		                    </div>
+							<div class="media-body well">
+		                    				                        			                        			                        <label class="radio inline"><input type="radio" name="question[8456]" rel="8456" value="A" />A </label>
+			                        			                        			                        <label class="radio inline"><input type="radio" name="question[8456]" rel="8456" value="B" />B </label>
+			                        			                        			                        <label class="radio inline"><input type="radio" name="question[8456]" rel="8456" value="C" />C </label>
+			                        			                        			                        <label class="radio inline"><input type="radio" name="question[8456]" rel="8456" value="D" />D </label>
+			                        			                        			                        		                        		                    </div>
+														<div class="media-body well">
+								<div class="btn-group pull-right">
+				            						            		<a class="btn" href="javascript:;" onclick="javascript:gotoindexquestion(3,1);" title="上一题">上一题</a>
+				            						            						            		<a class="btn" href="javascript:;" onclick="javascript:gotoindexquestion(5,1);" title="下一题">下一题</a>
+													            	</div>
+			            	</div>
+						</div>
+					</div>
+						                	                	                <div id="question_8457" class="paperexamcontent">
+						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-info questionindex">6</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:signQuestion('8457',this);"><em class="icon-star-empty" title="标注"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_8457"></a><p>Safari 拥有了一些新的功能，其中包括：______</p>							</div>
+														<div class="media-body well">
+		                    	<p>A、延长上网时间，上网浏览速度更快</p>
+
+<p><span style="line-height: 1.6em;">B、</span><span style="line-height: 1.6em;">全新的以标签方式浏览网页</span></p>
+
+<p><span style="line-height: 1.6em;">C、</span><span style="line-height: 1.6em;">支持网页上的视频播放</span></p>
+
+<p><span style="line-height: 1.6em;">D、</span><span style="line-height: 1.6em;">以上全对</span></p>		                    </div>
+							<div class="media-body well">
+		                    				                        			                        			                        <label class="radio inline"><input type="radio" name="question[8457]" rel="8457" value="A" />A </label>
+			                        			                        			                        <label class="radio inline"><input type="radio" name="question[8457]" rel="8457" value="B" />B </label>
+			                        			                        			                        <label class="radio inline"><input type="radio" name="question[8457]" rel="8457" value="C" />C </label>
+			                        			                        			                        <label class="radio inline"><input type="radio" name="question[8457]" rel="8457" value="D" />D </label>
+			                        			                        			                        		                        		                    </div>
+														<div class="media-body well">
+								<div class="btn-group pull-right">
+				            						            		<a class="btn" href="javascript:;" onclick="javascript:gotoindexquestion(4,1);" title="上一题">上一题</a>
+				            						            						            	</div>
+			            	</div>
+						</div>
+					</div>
+														</div>
+																																												<div aria-hidden="true" id="submodal" class="modal hide fade" role="dialog" aria-labelledby="#mySubModalLabel">
+					<div class="modal-header">
+						<button aria-hidden="true" class="close" type="button" data-dismiss="modal">×</button>
+						<h3 id="mySubModalLabel">
+							交卷
+						</h3>
+					</div>
+					<div class="modal-body" id="modal-body" style="max-height:100%;">
+						<p>共有试题 <span class="allquestionnumber">50</span> 题，已做 <span class="yesdonumber">0</span> 题。您确认要交卷吗？</p>
+					</div>
+					<div class="modal-footer">
+						 <button type="button" onclick="javascript:submitPaper();" class="btn btn-primary">确定交卷</button>
+						 <input type="hidden" name="insertscore" value="1"/>
+						 <button aria-hidden="true" class="btn" type="button" data-dismiss="modal">再检查一下</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="row-fluid">
+	<div class="toolcontent">
+		<div class="container-fluid footcontent">
+			<div class="span2">
+				<ul class="unstyled">
+					<li><h4><img src="app/core/styles/images/icons/Watches.png" style="width:1.3em;"/> <span id="timer_h">00</span>：<span id="timer_m">00</span>：<span id="timer_s">00</span></h4></li>
+				</ul>
+			</div>
+			<div class="span2">
+				<ul class="unstyled">
+					<li><h6><a href="#top"><em class="icon-circle-arrow-up"></em>回顶部</a> &nbsp; <a href="#modal" data-toggle="modal"><em class="icon-calendar"></em>试题列表</a></h6></li>
+				</ul>
+			</div>
+			<div class="span6">
+				<ul class="unstyled">
+					<li><h6>已做 <span class="yesdonumber">0</span> 题 共 <span class="allquestionnumber">50</span> 题 总分：<span class="orange">100</span>分 合格分数线：<span class="orange">60</span>分 考试时间：<span class="orange">90</span>分钟</h6></li>
+				</ul>
+			</div>
+			<div class="span2">
+				<ul class="unstyled">
+					<li class="text-right"><a href="#submodal" role="button" class="btn btn-primary" data-toggle="modal"> 交 卷 </a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+function gotoquestion(questid,questypeid)
+{
+	$(".questionpanel").hide();
+	$(".paperexamcontent").hide();
+	$("#panel-type-"+questypeid).show();
+	$("#question_"+questid).show();
+	$('#modal').modal('hide');
+}
+function gotoindexquestion(index)
+{
+	$(".questionpanel").hide();
+	$(".paperexamcontent").hide();
+	$(".paperexamcontent").eq(index).show();
+	$(".paperexamcontent").eq(index).parents(".questionpanel").show();
+}
+$(document).ready(function(){
+	$.get('index.php?exam-app-index-ajax-lefttime&rand'+Math.random(),function(data){
+		var setting = {
+						time:90,
+						hbox:$("#timer_h"),
+			mbox:$("#timer_m"),
+			sbox:$("#timer_s"),
+			finish:function(){submitPaper();}
+		}
+		setting.lefttime = parseInt(data);
+		countdown(setting);
+	});
+
+	var m = function(){
+		$(".questionpanel").hide();
+		$(".questionpanel:first").show();
+		$(".paperexamcontent").hide();
+		$(".paperexamcontent:first").show();
+	};
+	m();
+	//setInterval(refreshRecord,15000);
+	setInterval(saveanswer,300000);
+
+	$('.allquestionnumber').html($('.paperexamcontent').length);
+	$('.yesdonumber').html($('#modal-body .badge-info').length);
+
+	initData = $.parseJSON(storage.getItem('questions'));
+	if(initData){
+		for(var p in initData){
+			if(p!='set')
+			formData[p]=initData[p];
+		}
+
+		var textarea = $('#form1 textarea');
+		$.each(textarea,function(){
+			var _this = $(this);
+			_this.val(initData[_this.attr('name')]);
+			CKEDITOR.instances[_this.attr('id')].setData(initData[_this.attr('name')]);
+			if(initData[_this.attr('name')] && initData[_this.attr('name')] != '')
+			batmark(_this.attr('rel'),initData[_this.attr('name')]);
+		});
+
+		var texts = $('#form1 :input[type=text]');
+		$.each(texts,function(){
+			var _this = $(this);
+			_this.val(initData[_this.attr('name')]);
+			if(initData[_this.attr('name')] && initData[_this.attr('name')] != '')
+			batmark(_this.attr('rel'),initData[_this.attr('name')]);
+		});
+
+		var radios = $('#form1 :input[type=radio]');
+		$.each(radios,function(){
+			var _= this, v = initData[_.name];
+			var _this = $(this);
+			if(v!=''&&v==_.value){
+				_.checked = true;
+				batmark(_this.attr('rel'),initData[_this.attr('name')]);
+			}else{
+				_.checked=false;
+			}
+		});
+
+		var checkboxs=$('#form1 :input[type=checkbox]');
+		$.each(checkboxs,function(){
+			var _=this,v=initData[_.name];
+			var _this = $(this);
+			if(v!=''&&v==_.value){
+				_.checked=true;
+				batmark(_this.attr('rel'),initData[_this.attr('name')]);
+			}else{
+				_.checked=false;
+			}
+		});
+	}
+
+	$('#form1 :input[type=text]').change(function(){
+		var _this=$(this);
+		var p=[];
+		p.push(_this.attr('name'));
+		p.push(_this.val());
+		set.apply(formData,p);
+		markQuestion(_this.attr('rel'));
+	});
+
+	$('#form1 :input[type=radio]').change(function(){
+		var _=this;
+		var _this=$(this);
+		var p=[];
+		p.push(_.name);
+		if(_.checked){
+			p.push(_.value);
+			set.apply(formData,p);
+		}else{
+			p.push('');
+			set.apply(formData,p);
+		}
+		markQuestion(_this.attr('rel'));
+	});
+
+	$('#form1 textarea').change(function(){
+		var _= this;
+		var _this=$(this);
+		var p=[];
+		p.push(_.name);
+		p.push(_.value);
+		set.apply(formData,p);
+		markQuestion(_this.attr('rel'));
+	});
+
+	$('#form1 :input[type=checkbox]').change(function(){
+		var _= this;
+		var _this = $(this);
+		var p=[];
+		p.push(_.name);
+		if(_.checked){
+			p.push(_.value);
+			set.apply(formData,p);
+		}else{
+			p.push('');
+			set.apply(formData,p);
+		}
+		markQuestion(_this.attr('rel'));
+	});
+});
+</script>
+<div class="row-fluid">
+	<div class="container-fluid logfooter">
+		<ul class="inline unstyled">
+			<li><a href="http://phpems.net">网站首页</a></li>
+			<li>|</li>
+			<li><a href="http://phpems.net/bbs/">用户须知</a></li>
+			<li>|</li>
+			<li><a href="http://phpems.net/bbs/">隐私协议</a></li>
+			<li>|</li>
+			<li><a href="http://phpems.net/bbs/">网站论坛</a></li>
+			<li>|</li>
+			<li>豫ICP备13016752号-1</li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript">
+$(".thumbnails img").bind("error",function(){$(this).attr("src","app/core/styles/images/icons/Book.png?"+Math.random());});
+</script></body>
+</html>

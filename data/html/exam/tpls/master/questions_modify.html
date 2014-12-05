@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="无纸化模拟考试系统">
+<meta name="description" content="无纸化模拟考试系统">
+<meta name="keywords" content="无纸化模拟考试系统">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>PHPEMS无纸化模拟考试系统</title>
+<!-- Le styles -->
+<link href="app/core/styles/css/bootstrap-combined.min.css" rel="stylesheet">
+<link href="app/core/styles/css/layoutit.css" rel="stylesheet">
+<link href="app/core/styles/css/plugin.css" rel="stylesheet">
+<link href="app/core/styles/css/datetimepicker.css" rel="stylesheet">
+<script type="text/javascript" src="app/core/styles/js/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" href="app/exam/styles/css/mathquill.css" type="text/css">
+<script type="text/javascript" src="app/core/styles/js/jquery-ui.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<script type="text/javascript" src="app/core/styles/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
+<script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
+</head><body>
+<div class="navbar navbar-inverse">	<div class="navbar-inner">		<div class="container-fluid">			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>			<a href="index.php" target="_blank" class="brand"><img src="app/core/styles/images/favicon.png">PHPEMS系统管理平台<span class="label">Version:2.2</span></a>			<div class="nav-collapse navbar-responsive-collapse collapse">				<ul class="nav">					<li>						<a href="index.php?core-master">全局</a>					</li>															<li>						<a href="index.php?user-master">用户模块</a>					</li>																				<li class="active">						<a href="index.php?exam-master">考试模块</a>					</li>																																								<li>						<a href="index.php?content-master">内容模块</a>					</li>																				<li>						<a href="index.php?bank-master">财务模块</a>					</li>														</ul>				<ul class="nav pull-right">					<li>						<a href="index.php">网站首页</a>					</li>					<li class="divider-vertical">					</li>					<li class="dropdown">						<a data-toggle="dropdown" class="dropdown-toggle" href="#">peadmin<strong class="caret"></strong></a>						<ul class="dropdown-menu">							<!--							<li>								<a href="index.php?user-app-privatement">个人中心</a>							</li>							<li class="divider">							</li>							-->							<li>								<a href="index.php?core-master-logout">退出管理</a>							</li>						</ul>					</li>				</ul>			</div>		</div>	</div></div><div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span2">
+			<div class="accordion" id="accordion-13465">	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-707348">考试设计 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-707348">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="?exam-master-basic">考场列表</a></li>		    		<li><a href="?exam-master-basic-area">地区设置</a></li>		    		<li><a href="?exam-master-basic-subject">科目管理</a></li>		    		<li><a href="?exam-master-basic-questype">题型管理</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-2120761">课程开通 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-2120761">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-master-users">开通课程</a></li>					<li><a href="index.php?exam-master-users-batopen">批量开通</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212076">试题管理 </a>		</div>		<div class="accordion-body in collapse" id="accordion-element-212076">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-master-questions">普通试题管理</a></li>					<li><a href="index.php?exam-master-rowsquestions">题帽题管理</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212096">试卷管理 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-212096">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-master-exams">试卷列表</a></li>					<li><a href="index.php?exam-master-exams-autopage">随机组卷</a></li>					<li><a href="index.php?exam-master-exams-selfpage">手工组卷</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212090">回收站 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-212090">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-master-recyle">普通试题</a></li>					<li><a href="index.php?exam-master-recyle-rows">题帽题</a></li>					<li><a href="index.php?exam-master-recyle-knows">知识点</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-2120901">批量工具 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-2120901">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-master-tools">删除试题</a></li>					<li><a href="index.php?exam-master-tools-clearhistory">清空考试记录</a></li>					<li><a href="index.php?exam-master-tools-clearsession">清理会话</a></li>				</ul>			</div>		</div>	</div></div>		</div>
+		<div class="span10" id="datacontent">
+			<ul class="breadcrumb">
+				<li><a href="index.php?exam-master">考试模块</a> <span class="divider">/</span></li>
+				<li><a href="index.php?exam-master-questions&page=">普通试题管理</a> <span class="divider">/</span></li>
+				<li class="active">修改普通试题</li>
+			</ul>
+			<ul class="nav nav-tabs">
+				<li class="active">
+					<a href="#">修改普通试题</a>
+				</li>
+				<li class="pull-right">
+					<a href="index.php?exam-master-questions&page=">普通试题管理</a>
+				</li>
+			</ul>
+			<form action="index.php?exam-master-questions-modifyquestion" method="post" class="form-horizontal">
+				<fieldset>
+				<div class="control-group">
+					<label class="control-label">知识点：</label>
+				  	<div class="controls">
+				  		<textarea class="input-xxlarge" rows="4" needle="needle" min="1" msg="您最少需要选定一个知识点" name="args[questionknowsid]" id="questionknowsid" readonly>1:抗战史
+</textarea>
+					</div>
+				</div>
+				<div class="control-group">
+			  		<div class="controls">
+				  		<select class="combox" target="isectionselect" refUrl="?exam-master-questions-ajax-getsectionsbysubjectid&subjectid={value}">
+			        		<option value="0">选择科目</option>
+					  							  		<option value="1">产品</option>
+					  							  		<option value="2">科普常识</option>
+					  							  		<option value="3">测试科目</option>
+					  						  		</select>
+				  		<select class="combox" id="isectionselect" target="iknowsselect" refUrl="?exam-master-questions-ajax-getknowsbysectionid&sectionid={value}">
+				  			<option value="0">选择章节</option>
+				  		</select>
+				  		<select class="combox" id="iknowsselect">
+				  		<option value="0">选择知识点</option>
+				  		</select>
+					</div>
+				</div>
+				<div class="control-group">
+			  		<div class="controls">
+			  			<input type="button" class="btn" value="选定" onclick="javascript:setKnowsList('questionknowsid','iknowsselect','+');"/>
+			  			<input type="button" class="btn" value="清除" onclick="javascript:setKnowsList('questionknowsid','iknowsselect','-');"/>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">题型：</label>
+				  	<div class="controls">
+					  	<select needle="needle" msg="您必须为要添加的试题选择一种题型" name="args[questiontype]" class="combox" onchange="javascript:setAnswerHtml($(this).find('option:selected').attr('rel'),'answerbox');">
+					  							  		<option rel="1" value="1" selected>单选题</option>
+					  							  		<option rel="2" value="2">多选题</option>
+					  							  		<option rel="4" value="3">判断题</option>
+					  							  		<option rel="0" value="4">问答题</option>
+					  							  		<option rel="0" value="5">填空题</option>
+					  							  	</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">题干：</label>
+				  	<div class="controls">
+					  	<textarea class="ckeditor" name="args[question]" id="question">&lt;p&gt;Safari 拥有了一些新的功能，其中包括：______&lt;/p&gt;</textarea>
+					  	<span class="help-block">需要填空处请以()表示。</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">备选项：</label>
+				  	<div class="controls">
+					  	<textarea class="ckeditor" name="args[questionselect]" id="questionselect">&lt;p&gt;A、延长上网时间，上网浏览速度更快&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;line-height: 1.6em;&quot;&gt;B、&lt;/span&gt;&lt;span style=&quot;line-height: 1.6em;&quot;&gt;全新的以标签方式浏览网页&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;line-height: 1.6em;&quot;&gt;C、&lt;/span&gt;&lt;span style=&quot;line-height: 1.6em;&quot;&gt;支持网页上的视频播放&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;line-height: 1.6em;&quot;&gt;D、&lt;/span&gt;&lt;span style=&quot;line-height: 1.6em;&quot;&gt;以上全对&lt;/span&gt;&lt;/p&gt;</textarea>
+					  	<span class="help-block">无选择项的请不要填写，如填空题、问答题等主观题。</span>
+					</div>
+				</div>
+				<div class="control-group" id="selectnumber">
+					<label for="questionselectnumber" class="control-label">备选项数量：</label>
+				  	<div class="controls">
+					  	<select name="args[questionselectnumber]" id="questionselectnumber">
+					  		<option value="0">0</option>
+					  		<option value="2">2</option>
+					  		<option value="4" selected>4</option>
+					  		<option value="5">5</option>
+					  		<option value="6">6</option>
+					  	</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">参考答案：</label>
+					<div class="controls">
+						<div id="answerbox_1" class="answerbox">
+						  	<label class="radio inline"><input type="radio" name="targs[questionanswer1]" value="A" checked>A</label>
+						  	<label class="radio inline"><input type="radio" name="targs[questionanswer1]" value="B">B</label>
+						  	<label class="radio inline"><input type="radio" name="targs[questionanswer1]" value="C">C</label>
+						  	<label class="radio inline"><input type="radio" name="targs[questionanswer1]" value="D">D</label>
+						  	<label class="radio inline"><input type="radio" name="targs[questionanswer1]" value="E">E</label>
+						</div>
+						<div id="answerbox_2" class="answerbox" style="display:none;">
+						  	<label class="checkbox inline"><input type="checkbox" name="targs[questionanswer2][]" value="A" checked>A</label>
+						  	<label class="checkbox inline"><input type="checkbox" name="targs[questionanswer2][]" value="B">B</label>
+						  	<label class="checkbox inline"><input type="checkbox" name="targs[questionanswer2][]" value="C">C</label>
+						  	<label class="checkbox inline"><input type="checkbox" name="targs[questionanswer2][]" value="D">D</label>
+						  	<label class="checkbox inline"><input type="checkbox" name="targs[questionanswer2][]" value="E">E</label>
+						</div>
+						<div id="answerbox_3" class="answerbox" style="display:none;">
+						  	<label class="checkbox inline"><input type="checkbox" name="targs[questionanswer3][]" value="A" checked>A</label>
+						  	<label class="checkbox inline"><input type="checkbox" name="targs[questionanswer3][]" value="B">B</label>
+						  	<label class="checkbox inline"><input type="checkbox" name="targs[questionanswer3][]" value="C">C</label>
+						  	<label class="checkbox inline"><input type="checkbox" name="targs[questionanswer3][]" value="D">D</label>
+						  	<label class="checkbox inline"><input type="checkbox" name="targs[questionanswer3][]" value="E">E</label>
+						</div>
+						<div id="answerbox_4" class="controls" style="display:none;">
+						  	<label class="radio inline"><input type="radio" name="targs[questionanswer4]" value="A" checked>对</label>
+						  	<label class="radio inline"><input type="radio" name="targs[questionanswer4]" value="B">错</label>
+						</div>
+						<div id="answerbox_0" style="display:none;" class="answerbox">
+					  		<textarea cols="72" rows="7" class="ckeditor" id="questionanswer0" name="targs[questionanswer0]">A</textarea>
+						</div>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">习题解析：</label>
+				  	<div class="controls">
+				  		<textarea class="ckeditor" name="args[questiondescribe]" id="questiondescribe"></textarea>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">难度：</label>
+				  	<div class="controls">
+					  	<select class="combox" name="args[questionlevel]" needle="needle" msg="您必须为要添加的试题设置一个难度">
+					  		<option value="1" selected>易</option>
+					  		<option value="2">中</option>
+					  		<option value="3">难</option>
+					  	</select>
+					</div>
+				</div>
+				<div class="control-group">
+				  	<div class="controls">
+					  	<button class="btn btn-primary" type="submit">提交</button>
+					  	<input type="hidden" name="page" value=""/>
+					  	<input type="hidden" name="args[questionparent]" value=""/>
+					  	<input type="hidden" name="questionid" value="8457"/>
+					  	<input type="hidden" name="modifyquestion" value="1"/>
+					  						</div>
+				</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

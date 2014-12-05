@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="无纸化模拟考试系统">
+<meta name="description" content="无纸化模拟考试系统">
+<meta name="keywords" content="无纸化模拟考试系统">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>PHPEMS无纸化模拟考试系统</title>
+<!-- Le styles -->
+<link href="app/core/styles/css/bootstrap-combined.min.css" rel="stylesheet">
+<link href="app/core/styles/css/layoutit.css" rel="stylesheet">
+<link href="app/core/styles/css/plugin.css" rel="stylesheet">
+<link href="app/core/styles/css/datetimepicker.css" rel="stylesheet">
+<script type="text/javascript" src="app/core/styles/js/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" href="app/exam/styles/css/mathquill.css" type="text/css">
+<script type="text/javascript" src="app/core/styles/js/jquery-ui.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<script type="text/javascript" src="app/core/styles/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
+<script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
+</head><body>
+<div class="navbar navbar-inverse">	<div class="navbar-inner">		<div class="container-fluid">			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>			<a href="index.php" target="_blank" class="brand"><img src="app/core/styles/images/favicon.png">PHPEMS系统管理平台<span class="label">Version:2.2</span></a>			<div class="nav-collapse navbar-responsive-collapse collapse">				<ul class="nav">					<li>						<a href="index.php?core-master">全局</a>					</li>															<li>						<a href="index.php?user-master">用户模块</a>					</li>																				<li class="active">						<a href="index.php?exam-master">考试模块</a>					</li>																																								<li>						<a href="index.php?content-master">内容模块</a>					</li>																				<li>						<a href="index.php?bank-master">财务模块</a>					</li>														</ul>				<ul class="nav pull-right">					<li>						<a href="index.php">网站首页</a>					</li>					<li class="divider-vertical">					</li>					<li class="dropdown">						<a data-toggle="dropdown" class="dropdown-toggle" href="#">peadmin<strong class="caret"></strong></a>						<ul class="dropdown-menu">							<!--							<li>								<a href="index.php?user-app-privatement">个人中心</a>							</li>							<li class="divider">							</li>							-->							<li>								<a href="index.php?core-master-logout">退出管理</a>							</li>						</ul>					</li>				</ul>			</div>		</div>	</div></div><div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span2">
+			<div class="accordion" id="accordion-13465">	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-707348">考试设计 </a>		</div>		<div class="accordion-body in collapse" id="accordion-element-707348">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="?exam-master-basic">考场列表</a></li>		    		<li><a href="?exam-master-basic-area">地区设置</a></li>		    		<li><a href="?exam-master-basic-subject">科目管理</a></li>		    		<li><a href="?exam-master-basic-questype">题型管理</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-2120761">课程开通 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-2120761">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-master-users">开通课程</a></li>					<li><a href="index.php?exam-master-users-batopen">批量开通</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212076">试题管理 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-212076">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-master-questions">普通试题管理</a></li>					<li><a href="index.php?exam-master-rowsquestions">题帽题管理</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212096">试卷管理 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-212096">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-master-exams">试卷列表</a></li>					<li><a href="index.php?exam-master-exams-autopage">随机组卷</a></li>					<li><a href="index.php?exam-master-exams-selfpage">手工组卷</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-212090">回收站 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-212090">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-master-recyle">普通试题</a></li>					<li><a href="index.php?exam-master-recyle-rows">题帽题</a></li>					<li><a href="index.php?exam-master-recyle-knows">知识点</a></li>				</ul>			</div>		</div>	</div>	<div class="accordion-group">		<div class="accordion-heading">			<a class="accordion-toggle" data-parent="#accordion-13465" data-toggle="collapse" href="#accordion-element-2120901">批量工具 </a>		</div>		<div class="accordion-body collapse" id="accordion-element-2120901">			<div class="accordion-inner">				<ul class="unstyled">					<li><a href="index.php?exam-master-tools">删除试题</a></li>					<li><a href="index.php?exam-master-tools-clearhistory">清空考试记录</a></li>					<li><a href="index.php?exam-master-tools-clearsession">清理会话</a></li>				</ul>			</div>		</div>	</div></div>		</div>
+		<div class="span10" id="datacontent">
+			<ul class="breadcrumb">
+				<li><a href="index.php?exam-master">考试模块</a> <span class="divider">/</span></li>
+				<li class="active">地区设置</li>
+			</ul>
+			<ul class="nav nav-tabs">
+				<li class="active">
+					<a href="#">地区设置</a>
+				</li>
+				<li class="dropdown pull-right">
+					<a href="index.php?exam-master-basic-addarea&page=">添加地区</a>
+				</li>
+			</ul>
+	        <table class="table table-hover">
+	            <thead>
+	                <tr>
+	                    <th>地区ID</th>
+	                    <th>区号</th>
+						<th>地区名称</th>
+						<th>默认</th>
+						<th>操作</th>
+	                </tr>
+	            </thead>
+	            <tbody>
+                    					<tr>
+						<td>1</td>
+						<td>1</td>
+						<td>全国</td>
+						<td><em class="icon-ok"></em></td>
+						<td>
+							<div class="btn-group">
+	                    		<a class="btn" href="index.php?exam-master-basic&search[basicareaid]=1&page=" title="考场"><em class="icon-th-list"></em></a>
+	                    		<a class="btn" href="index.php?exam-master-basic-modifyarea&areaid=1&page=" title="修改"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-master-basic-delarea&areaid=1&page=" title="删除"><em class="icon-remove"></em></a>
+	                    	</div>
+						</td>
+					</tr>
+										<tr>
+						<td>3</td>
+						<td>373</td>
+						<td>河南</td>
+						<td><em class="icon-remove"></em></td>
+						<td>
+							<div class="btn-group">
+	                    		<a class="btn" href="index.php?exam-master-basic&search[basicareaid]=3&page=" title="考场"><em class="icon-th-list"></em></a>
+	                    		<a class="btn" href="index.php?exam-master-basic-modifyarea&areaid=3&page=" title="修改"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-master-basic-delarea&areaid=3&page=" title="删除"><em class="icon-remove"></em></a>
+	                    	</div>
+						</td>
+					</tr>
+										<tr>
+						<td>4</td>
+						<td>10</td>
+						<td>北京</td>
+						<td><em class="icon-remove"></em></td>
+						<td>
+							<div class="btn-group">
+	                    		<a class="btn" href="index.php?exam-master-basic&search[basicareaid]=4&page=" title="考场"><em class="icon-th-list"></em></a>
+	                    		<a class="btn" href="index.php?exam-master-basic-modifyarea&areaid=4&page=" title="修改"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-master-basic-delarea&areaid=4&page=" title="删除"><em class="icon-remove"></em></a>
+	                    	</div>
+						</td>
+					</tr>
+										<tr>
+						<td>5</td>
+						<td>29</td>
+						<td>陕西</td>
+						<td><em class="icon-remove"></em></td>
+						<td>
+							<div class="btn-group">
+	                    		<a class="btn" href="index.php?exam-master-basic&search[basicareaid]=5&page=" title="考场"><em class="icon-th-list"></em></a>
+	                    		<a class="btn" href="index.php?exam-master-basic-modifyarea&areaid=5&page=" title="修改"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-master-basic-delarea&areaid=5&page=" title="删除"><em class="icon-remove"></em></a>
+	                    	</div>
+						</td>
+					</tr>
+										<tr>
+						<td>6</td>
+						<td>311</td>
+						<td>河北</td>
+						<td><em class="icon-remove"></em></td>
+						<td>
+							<div class="btn-group">
+	                    		<a class="btn" href="index.php?exam-master-basic&search[basicareaid]=6&page=" title="考场"><em class="icon-th-list"></em></a>
+	                    		<a class="btn" href="index.php?exam-master-basic-modifyarea&areaid=6&page=" title="修改"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-master-basic-delarea&areaid=6&page=" title="删除"><em class="icon-remove"></em></a>
+	                    	</div>
+						</td>
+					</tr>
+										<tr>
+						<td>7</td>
+						<td>22</td>
+						<td>天津</td>
+						<td><em class="icon-remove"></em></td>
+						<td>
+							<div class="btn-group">
+	                    		<a class="btn" href="index.php?exam-master-basic&search[basicareaid]=7&page=" title="考场"><em class="icon-th-list"></em></a>
+	                    		<a class="btn" href="index.php?exam-master-basic-modifyarea&areaid=7&page=" title="修改"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-master-basic-delarea&areaid=7&page=" title="删除"><em class="icon-remove"></em></a>
+	                    	</div>
+						</td>
+					</tr>
+										<tr>
+						<td>8</td>
+						<td>531</td>
+						<td>山东</td>
+						<td><em class="icon-remove"></em></td>
+						<td>
+							<div class="btn-group">
+	                    		<a class="btn" href="index.php?exam-master-basic&search[basicareaid]=8&page=" title="考场"><em class="icon-th-list"></em></a>
+	                    		<a class="btn" href="index.php?exam-master-basic-modifyarea&areaid=8&page=" title="修改"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-master-basic-delarea&areaid=8&page=" title="删除"><em class="icon-remove"></em></a>
+	                    	</div>
+						</td>
+					</tr>
+										<tr>
+						<td>9</td>
+						<td>25</td>
+						<td>江苏</td>
+						<td><em class="icon-remove"></em></td>
+						<td>
+							<div class="btn-group">
+	                    		<a class="btn" href="index.php?exam-master-basic&search[basicareaid]=9&page=" title="考场"><em class="icon-th-list"></em></a>
+	                    		<a class="btn" href="index.php?exam-master-basic-modifyarea&areaid=9&page=" title="修改"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-master-basic-delarea&areaid=9&page=" title="删除"><em class="icon-remove"></em></a>
+	                    	</div>
+						</td>
+					</tr>
+										<tr>
+						<td>10</td>
+						<td>27</td>
+						<td>湖北</td>
+						<td><em class="icon-remove"></em></td>
+						<td>
+							<div class="btn-group">
+	                    		<a class="btn" href="index.php?exam-master-basic&search[basicareaid]=10&page=" title="考场"><em class="icon-th-list"></em></a>
+	                    		<a class="btn" href="index.php?exam-master-basic-modifyarea&areaid=10&page=" title="修改"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-master-basic-delarea&areaid=10&page=" title="删除"><em class="icon-remove"></em></a>
+	                    	</div>
+						</td>
+					</tr>
+										<tr>
+						<td>11</td>
+						<td>24</td>
+						<td>辽宁</td>
+						<td><em class="icon-remove"></em></td>
+						<td>
+							<div class="btn-group">
+	                    		<a class="btn" href="index.php?exam-master-basic&search[basicareaid]=11&page=" title="考场"><em class="icon-th-list"></em></a>
+	                    		<a class="btn" href="index.php?exam-master-basic-modifyarea&areaid=11&page=" title="修改"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-master-basic-delarea&areaid=11&page=" title="删除"><em class="icon-remove"></em></a>
+	                    	</div>
+						</td>
+					</tr>
+						        	</tbody>
+	        </table>
+	        <div class="pagination pagination-right">
+				<ul><li><a href="#" class="current">1</a></li><li><a target="" href="index.php?exam-master-basic-area&page=2">2</a></li><li><a target="" href="index.php?exam-master-basic-area&page=3">3</a></li></ul>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

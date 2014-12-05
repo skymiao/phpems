@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="无纸化模拟考试系统">
+<meta name="description" content="无纸化模拟考试系统">
+<meta name="keywords" content="无纸化模拟考试系统">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>PHPEMS无纸化模拟考试系统</title>
+<link href="app/core/styles/css/bootstrap.css" rel="stylesheet">
+<link href="app/core/styles/css/plugin.css" rel="stylesheet">
+<link href="app/user/styles/css/theme.css" rel="stylesheet" type="text/css" />
+<link href="app/core/styles/css/datetimepicker.css" rel="stylesheet">
+<script type="text/javascript" src="app/core/styles/js/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" href="app/exam/styles/css/mathquill.css" type="text/css">
+<script type="text/javascript" src="app/core/styles/js/jquery-ui.js"></script>
+<script type="text/javascript" src="app/core/styles/js/jquery.json.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="app/core/styles/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
+<script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
+<script src="app/exam/styles/js/plugin.js"></script>
+</head><body>
+<div class="row-fluid topLine">
+	<div class="container-fluid">
+		<div class="span4"></div>
+		<div class="span8">
+			<span class="pull-right">
+						您好（peadmin）&nbsp;&nbsp;<a href="index.php?user-center"><em class="icon-user"></em> 用户中心</a>&nbsp;&nbsp;<em class="icon-edit"></em> <a href="index.php?core-master">后台管理</a>&nbsp;&nbsp;<a href="index.php?user-app-logout"><em class="icon-lock"></em> 退出</a>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+			</span>
+		</div>
+	</div>
+</div>
+<div class="row-fluid top">
+	<div class="container-fluid">
+		<div class="span4"><a name="top"></a><h2><img src="app/user/styles/img/theme/logo.png" /></h2></div>
+		<div class="span8">
+			<div class="navbar" id="menuNav">
+				<div class="">
+					<div class="nav-collapse">
+						<ul class="nav pull-right">
+							<li class="mainmenu">
+								<a href="index.php">主页</a>
+							</li>
+							<li class="active mainmenu">
+								<a href="index.php?exam">在线考试</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><div class="row-fluid">
+	<div class="container-fluid examcontent">
+		<div class="exambox" id="datacontent">
+			<div class="examform">
+				<ul class="breadcrumb">
+					<li>
+						<span class="icon-home"></span> <a href="index.php?exam">考场选择</a> <span class="divider">/</span>
+					</li>
+					<li>
+						<a href="index.php?exam-app-basics">测试考场</a> <span class="divider">/</span>
+					</li>
+					<li class="active">
+						模拟考试
+					</li>
+				</ul>
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#" data-toggle="tab">模拟考试</a>
+					</li>
+				</ul>
+            	<ul class="unstyled">
+                	<li><b>1、</b>点击考试名称按钮进入答题界面，考试开始计时。</li>
+                	<li><b>2、</b>在随机考试过程中，您可以通过顶部的考试时间来掌握自己的做题时间。</li>
+                	<li><b>3、</b>提交试卷后，可以通过“查看答案和解析”功能进行总结学习。</li>
+                	<li><b>4、</b>系统自动记录模拟考试的考试记录，学员考试结束后可以进入“答题记录”功能进行查看。</li>
+                	<li>&nbsp;</li>
+                </ul>
+				<ul class="thumbnails">
+										<li class="span2">
+						<div class="thumbnail">
+							<img src="app/core/styles/images/icons/Clipboard.png"/>
+							<div class="caption">
+								<p class="text-center">
+									<a class="ajax btn btn-primary" href="index.php?exam-app-exampaper-selectquestions&examid=3" title="测试组卷" action-before="clearStorage">测试组卷</a>
+								</p>
+							</div>
+						</div>
+					</li>
+										<li class="span2">
+						<div class="thumbnail">
+							<img src="app/core/styles/images/icons/Clipboard.png"/>
+							<div class="caption">
+								<p class="text-center">
+									<a class="ajax btn btn-primary" href="index.php?exam-app-exampaper-selectquestions&examid=2" title="手动组卷示例" action-before="clearStorage">手动组卷示例</a>
+								</p>
+							</div>
+						</div>
+					</li>
+										<li class="span2">
+						<div class="thumbnail">
+							<img src="app/core/styles/images/icons/Clipboard.png"/>
+							<div class="caption">
+								<p class="text-center">
+									<a class="ajax btn btn-primary" href="index.php?exam-app-exampaper-selectquestions&examid=1" title="近代史课测试" action-before="clearStorage">近代史课测试</a>
+								</p>
+							</div>
+						</div>
+					</li>
+									</ul>
+				<div class="pagination pagination-right">
+		            <ul></ul>
+		        </div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row-fluid">
+	<div class="container-fluid logfooter">
+		<ul class="inline unstyled">
+			<li><a href="http://phpems.net">网站首页</a></li>
+			<li>|</li>
+			<li><a href="http://phpems.net/bbs/">用户须知</a></li>
+			<li>|</li>
+			<li><a href="http://phpems.net/bbs/">隐私协议</a></li>
+			<li>|</li>
+			<li><a href="http://phpems.net/bbs/">网站论坛</a></li>
+			<li>|</li>
+			<li>豫ICP备13016752号-1</li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript">
+$(".thumbnails img").bind("error",function(){$(this).attr("src","app/core/styles/images/icons/Book.png?"+Math.random());});
+</script></body>
+</html>

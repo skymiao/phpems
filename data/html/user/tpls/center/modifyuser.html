@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="无纸化模拟考试系统">
+<meta name="description" content="无纸化模拟考试系统">
+<meta name="keywords" content="无纸化模拟考试系统">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>无纸化模拟考试系统</title>
+<!–[if lt IE9]> 
+<script src="app/core/styles/js/html5.js"></script>
+<![endif]–>
+<!-- Le styles -->
+<link href="app/core/styles/css/bootstrap-combined.min.css" rel="stylesheet">
+<link href="app/core/styles/css/layoutit.css" rel="stylesheet">
+<link href="app/core/styles/css/plugin.css" rel="stylesheet">
+<!-- 
+<script type="text/javascript" src="app/core/styles/js/jquery.min.js"></script>
+-->
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="app/core/styles/js/html5shiv.js"></script>
+<![endif]-->
+<script type="text/javascript" src="app/core/styles/js/jquery-1.9.1.min.js"></script>
+
+<script type="text/javascript" src="app/core/styles/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="app/core/styles/js/jquery-ui.js"></script>
+<script type="text/javascript" src="app/core/styles/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
+<script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
+<link href="app/user/styles/css/theme.css" rel="stylesheet" type="text/css" />
+</head><body>
+<div class="row-fluid topLine">	<div class="container-fluid">		<div class="span4"></div>		<div class="span8">			<span class="pull-right">						您好（test）&nbsp;&nbsp;<a href="index.php?user-center"><em class="icon-user"></em> 用户中心</a>&nbsp;&nbsp;<em class="icon-edit"></em> <a href="index.php?exam-teach">教师管理</a>&nbsp;&nbsp;<a href="index.php?user-app-logout"><em class="icon-lock"></em> 退出</a>						&nbsp;&nbsp;&nbsp;&nbsp;			</span>		</div>	</div></div><div class="row-fluid top">	<div class="container-fluid">		<div class="span4"><a name="top"></a><h2><img src="app/user/styles/img/theme/logo.png" /></h2></div>		<div class="span8">			<div class="navbar" id="menuNav">				<div class="">					<div class="nav-collapse">						<ul class="nav pull-right">							<li class="mainmenu">								<a href="index.php">主页</a>							</li>							<li class="active mainmenu">								<a href="index.php?exam">在线考试</a>							</li>						</ul>					</div>				</div>			</div>		</div>	</div></div><div class="row-fluid">
+	<div class="container-fluid examcontent">
+		<div class="span2 exambox">
+			<div class="examform">
+				<div>
+					<ul class="nav nav-tabs nav-stacked">	<li>		<a href="index.php?user-app">首页</a>	</li>	<li class="active">		<a href="index.php?user-center-privatement">隐私管理</a>	</li>	<li>		<a href="index.php?user-center-payfor">充值积分</a>	</li></ul>				</div>
+			</div>
+		</div>
+		<div class="span10 exambox" id="datacontent">
+			<div class="examform">
+				<div>
+					<ul class="breadcrumb">
+						<li><a href="index.php?user-app">用户中心</a> <span class="divider">/</span></li>
+						<li class="active">隐私设置</li>
+					</ul>
+					<div id="tabs-694325" class="tabbable">
+						<ul class="nav nav-tabs">
+							<li class="active">
+								<a href="#panel-344373" data-toggle="tab">用户资料</a>
+							</li>
+							<li>
+								<a href="#panel-788885" data-toggle="tab">修改密码</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div id="panel-344373" class="tab-pane active">
+								<form action="index.php?user-center-privatement" method="post" class="form-horizontal">
+									<fieldset>
+										<legend>test</legend>
+																				<div class="control-group">
+											<label for="usertruename" class="control-label">真实姓名：</label>
+											<div class="controls">
+											<input type="text" value="test" name="args[usertruename]" id="usertruename" />											</div>
+										</div>
+																				<div class="control-group">
+											<label for="photo" class="control-label">用户肖像：</label>
+											<div class="controls">
+											<div class="thumbuper pull-left"><div class="thumbnail"><a href="javascript:;" class="second label"><em class="uploadbutton" id="photo" exectype="thumb"></em></a><a href="javascript:;" onclick="javascript:$('#photo_view').attr('src','app/core/styles/images/noimage.gif');$('#photo_value').val('');" class="second2 label" title="重置"><em class="icon-remove"></em></a><div class="first" id="photo_percent"></div><div class="boot"><img src="app/core/styles/images/noimage.gif" id="photo_view"/><input type="hidden" name="args[photo]" value="app/core/styles/images/noimage.gif" id="photo_value"/></div></div></div>											</div>
+										</div>
+																				<div class="control-group">
+											<div class="controls">
+												<button class="btn btn-primary" type="submit">提交</button>
+												<input type="hidden" name="modifyuserinfo" value="1"/>
+												<input type="hidden" name="page" value=""/>
+																							</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<div id="panel-788885" class="tab-pane">
+								<form action="index.php?user-center-privatement" method="post" class="form-horizontal">
+									<fieldset>
+										<legend>test</legend>
+										<div class="control-group">
+											<label for="oldpassowrd" class="control-label">旧密码：</label>
+											<div class="controls">
+												<input id="oldpassowrd" type="password" name="oldpassword" needle="true" datatype="password" msg="密码字数必须在6位以上"/>
+											</div>
+										</div>
+										<div class="control-group">
+											<label for="passowrd1" class="control-label">新密码：</label>
+											<div class="controls">
+												<input id="passowrd1" type="password" name="args[password]" needle="true" datatype="password" msg="密码字数必须在6位以上"/>
+											</div>
+										</div>
+										<div class="control-group">
+											<label for="password2" class="control-label">重复密码：</label>
+											<div class="controls">
+												<input id="password2" type="password" name="args[password2]" needle="true" equ="passowrd1" msg="前后两次密码必须一致且不能为空"/>
+											</div>
+										</div>
+										<div class="control-group">
+											<div class="controls">
+												<button class="btn btn-primary" type="submit">提交</button>
+												<input type="hidden" name="modifyuserpassword" value="1"/>
+												<input type="hidden" name="page" value=""/>
+																							</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

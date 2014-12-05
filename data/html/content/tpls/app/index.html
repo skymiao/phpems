@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="无纸化模拟考试系统">
+<meta name="description" content="无纸化模拟考试系统">
+<meta name="keywords" content="无纸化模拟考试系统">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>PHPEMS无纸化模拟考试系统</title>
+<link href="app/core/styles/css/bootstrap.css" rel="stylesheet">
+<link href="app/core/styles/css/plugin.css" rel="stylesheet">
+<link href="app/user/styles/css/theme.css" rel="stylesheet" type="text/css" />
+<link href="app/core/styles/css/datetimepicker.css" rel="stylesheet">
+<script type="text/javascript" src="app/core/styles/js/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" href="app/exam/styles/css/mathquill.css" type="text/css">
+<script type="text/javascript" src="app/core/styles/js/jquery-ui.js"></script>
+<script type="text/javascript" src="app/core/styles/js/jquery.json.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="app/core/styles/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
+<script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
+<script type="text/javascript" src="app/core/styles/js/unslider.min.js"></script>
+<script type="text/javascript" src="app/core/styles/js/highcharts.js"></script>
+</head><body>
+<div class="row-fluid topLine">
+	<div class="container-fluid">
+		<div class="span4"></div>
+		<div class="span8">
+			<span class="pull-right">
+						您好（peadmin）&nbsp;&nbsp;<a href="index.php?user-center"><em class="icon-user"></em> 用户中心</a>&nbsp;&nbsp;<em class="icon-edit"></em> <a href="index.php?core-master">后台管理</a>&nbsp;&nbsp;<a href="index.php?user-app-logout"><em class="icon-lock"></em> 退出</a>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+			</span>
+		</div>
+	</div>
+</div>
+<div class="row-fluid top">
+	<div class="container-fluid">
+		<div class="span4"><a name="top"></a><h2><img src="app/user/styles/img/theme/logo.png" /></h2></div>
+		<div class="span8">
+			<div class="navbar" id="menuNav">
+				<div class="">
+					<div class="nav-collapse">
+						<ul class="nav pull-right">
+							<li class="active mainmenu">
+								<a href="index.php">主页</a>
+							</li>
+							<li class="mainmenu">
+								<a href="index.php?exam">在线考试</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><div class="row-fluid">
+	<div class="container-fluid examcontent">
+		<div class="exambox" id="datacontent">
+			<div class="examform">
+				<div class="banner span12">
+					<ul class="unstyled">
+												<li><div class="inner"><a href="index.php?content-app-content&contentid=2"><img src="files/attach/images/content/20141026/14143066236723.jpg" /></a></div></li>
+												<li><div class="inner"><a href="index.php?content-app-content&contentid=3"><img src="files/attach/images/content/20141026/14143066414697.jpg" /></a></div></li>
+												<li><div class="inner"><a href="index.php?content-app-content&contentid=4"><img src="files/attach/images/content/20141026/14143066568097.jpg" /></a></div></li>
+											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row-fluid">
+	<div class="container-fluid">
+		<div class="span6 examcontent">
+			<div class="exambox">
+				<div class="examform">
+					<h5 class="title">考试信息</h5>
+					<ul>
+												<li><a href="index.php?content-app-content&contentid=1">郑州市属事业单位招聘146人 部分职位免笔试</a></li>
+											</ul>
+				</div>
+			</div>
+		</div>
+		<div class="span3 examcontent">
+			<div class="exambox">
+				<div class="examform">
+					<h5 class="title">一周学霸排行榜</h5>
+					<ul>
+											</ul>
+				</div>
+			</div>
+		</div>
+		<div class="span3 examcontent">
+			<div class="exambox">
+				<div class="examform">
+					<h5 class="title">一月学霸排行榜</h5>
+					<ul>
+											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row-fluid">
+	<div class="container-fluid examcontent">
+		<div class="exambox" id="datacontent">
+			<div class="examform">
+				<h5 class="title">热门考场</h5>
+				<ul class="thumbnails">
+									</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row-fluid">
+	<div class="container-fluid examcontent">
+		<div class="exambox" id="datacontent">
+			<div class="examform">
+				<h5 class="title">最新考场</h5>
+				<ul class="thumbnails">
+										<li class="span2">
+						<div class="thumbnail">
+							<img alt="300x200" src="files/attach/images/content/20140330/13961666286601.png"/>
+							<div class="caption">
+								<p class="text-center">
+									<a class="ajax btn btn-primary" href="index.php?exam-app-index-setCurrentBasic&basicid=5" title="测试考场">测试考场</a>
+								</p>
+							</div>
+						</div>
+					</li>
+										<li class="span2">
+						<div class="thumbnail">
+							<img alt="300x200" src="files/attach/images/content/20140330/13961668082458.png"/>
+							<div class="caption">
+								<p class="text-center">
+									<a class="ajax btn btn-primary" href="index.php?exam-app-index-setCurrentBasic&basicid=4" title="福建近代史">福建近代史</a>
+								</p>
+							</div>
+						</div>
+					</li>
+										<li class="span2">
+						<div class="thumbnail">
+							<img alt="300x200" src="files/attach/images/content/20140330/13961666074608.png"/>
+							<div class="caption">
+								<p class="text-center">
+									<a class="ajax btn btn-primary" href="index.php?exam-app-index-setCurrentBasic&basicid=3" title="上海近代史">上海近代史</a>
+								</p>
+							</div>
+						</div>
+					</li>
+										<li class="span2">
+						<div class="thumbnail">
+							<img alt="300x200" src="files/attach/images/content/20140330/13961665964880.png"/>
+							<div class="caption">
+								<p class="text-center">
+									<a class="ajax btn btn-primary" href="index.php?exam-app-index-setCurrentBasic&basicid=2" title="江西近代史">江西近代史</a>
+								</p>
+							</div>
+						</div>
+					</li>
+										<li class="span2">
+						<div class="thumbnail">
+							<img alt="300x200" src="files/attach/images/content/20140330/13961665756373.png"/>
+							<div class="caption">
+								<p class="text-center">
+									<a class="ajax btn btn-primary" href="index.php?exam-app-index-setCurrentBasic&basicid=1" title="河南近代史">河南近代史</a>
+								</p>
+							</div>
+						</div>
+					</li>
+									</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row-fluid">
+	<div class="container-fluid logfooter">
+		<ul class="inline unstyled">
+			<li><a href="http://phpems.net">网站首页</a></li>
+			<li>|</li>
+			<li><a href="http://phpems.net/bbs/">用户须知</a></li>
+			<li>|</li>
+			<li><a href="http://phpems.net/bbs/">隐私协议</a></li>
+			<li>|</li>
+			<li><a href="http://phpems.net/bbs/">网站论坛</a></li>
+			<li>|</li>
+			<li>豫ICP备13016752号-1</li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript">
+$(".thumbnails img").bind("error",function(){$(this).attr("src","app/core/styles/images/icons/Book.png?"+Math.random());});
+</script><script>
+$(function() {
+    $('.banner').unslider({dots: true});
+});
+</script>
+</body>
+</html>

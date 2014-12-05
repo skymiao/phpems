@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* 首页 */
+#clue{ width:248px; margin-left:45px; float:right;}
+#clue_bor_top{ height:10px; background:url(../image/clue_bg.jpg) 0 0;}
+#clue_bor_bottom{ height:10px; background:url(../image/clue_bg.jpg) 0 -10px;}
+#clue_content{ background:#e9f2e9; padding:0 16px;}
+#clue_content h3{ font-size:14px; border-bottom:#c6c7bf 1px solid; text-align:center; padding:5px 0 8px 0;}
+#clue_content p{ font-size:12px; border-top:#fff 1px solid; padding:8px 4px 5px 4px; line-height:24px;}
+
+#intro{ line-height:24px;}
+#begin_exam{ text-align:right; margin-top:20px;}
+
+#tutor_lesson{ clear:both; border:#e7e8e4 1px solid; margin-top:20px;}
+#tutor_lesson h2{ border-bottom:#e7e8e4 1px solid; font-size:14px; color:#3096a0; padding:6px 20px; margin-bottom:16px;}
+#tutor_lesson #cont{ margin:16px 22px;}
+#tutor_lesson #cont h3{ width:99px; height:28px; background:url(../image/tit_bg.jpg) 0 0; font-size:12px; text-align:center; padding-top:8px;}
+#tutor_lesson #cont table,#answer_note table,#result table{ border:#e7e8e4 1px solid; font-size:12px; line-height:28px; text-align:center;}
+#tutor_lesson #cont table th,#answer_note table th,#result table th{ border:#e7e8e4 1px solid; background:#e9f2e9;}
+#tutor_lesson #cont table td,#answer_note table td,#result table td{ border:#e7e8e4 1px solid; padding:0 10px;}
+#tutor_lesson #cont p{ font-size:12px; margin:10px 0 20px 0;}
+
+#column{ border:#e7e8e4 1px solid; margin-top:20px;}
+#column h2{ border-bottom:#e7e8e4 1px solid; font-size:14px; color:#3096a0; padding:0 0 4px 10px; margin-bottom:14px;}
+#column_left{ width:396px; border-right:#e7e8e4 1px solid; padding:16px; float:left;}
+#column_right{ width:226px; padding:16px; float:right;}
+#column_left ul li{ width:85px; float:left; margin-left:30px; line-height:34px;}
+#column_left ul li a{ margin-left:6px;}
+#column_right ul li{ background:url(../image/icon_dot.jpg) 6px 8px no-repeat; font-size:12px; text-indent:16px; line-height:18px;}
+
+/*答题记录*/
+#answer_note h2{ padding:0 0 8px 12px; margin-bottom:20px;}
+#answer_note #note_type_tit{ background:#f0f0f0; line-height:40px; padding:0 20px; margin-bottom:10px;}
+#answer_note #note_type{ font-size:12px; font-weight:normal; float:right;}
+#answer_note #note_type li{ width:80px; height:24px; background:url(../image/tit_bg.jpg) -890px 0 no-repeat; text-align:center; margin-left:5px; float:left; line-height:26px;}
+#answer_note #note_type li a{ display:block; width:80px; height:24px; text-decoration:none;}
+#answer_note #note_type li a:hover,#answer_note #note_type li a.on{ color:#b69b58;  background:url(../image/tit_bg.jpg) -890px -30px no-repeat;}
+#answer_note .mani_btn a{ width:62px; height:22px; background:#ededed; border:#d2d2d2 1px solid; padding:2px 5px; text-align:center;}
+#answer_note #del_note{ width:263px; margin:0 auto; background:#f2f2f2; border:#d1d1d1 1px solid; font-size:12px; margin-top:60px;}
+#answer_note #del_note h4{ height:20px; background:url(../image/tit_bg.jpg) -190px -40px no-repeat; font-size:12px; padding:8px 0 0 10px;}
+#answer_note #del_note p{ padding:10px 16px; line-height:24px; text-align:center;}
+#answer_note #del_note #btn_conf,#answer_note #del_note #btn_canc{ width:57px; height:25px; background:url(../image/tit_bg.jpg) -890px -120px no-repeat; border:none; cursor:pointer; margin:0 5px; color:#fff;}
+#answer_note #del_note #btn_canc{ background:url(../image/tit_bg.jpg) -890px -145px no-repeat;}
+#answer_note #page{ text-align:right; font-size:12px; margin-top:16px;}
+
+/*成绩单*/
+#result h1{ font-size:18px; text-align:center; border-bottom:#d8d8d8 1px solid; padding-bottom:30px; margin-bottom:25px;}
+#result #result_box{ background:url(../image/result_img.jpg) top left no-repeat; padding-left:175px; position:relative;}
+#result #result_box h3{ width:155px; color:#f18e1e; font-size:30px; text-align:center; padding-right:20px; position:absolute; top:115px; left:0}
+#result #result_box #result_con{ border-left:#d8d8d8 1px solid; padding:0 25px;}
+#result #result_remark{ padding:30px 0; margin-bottom:20px; position:relative;}
+#result #result_remark #pic_0-59,#result #result_remark #pic_60-69,#result #result_remark #pic_70-89,#result #result_remark #pic_90-100{ width:70px; height:70px; border:#dcdcdc 1px solid;background:#f4f4f4 url(../image/icon.gif) 15px -265px; position:absolute;}
+#result #result_remark #pic_60-69{ background:#f4f4f4 url(../image/icon.gif) 15px -200px;}
+#result #result_remark #pic_70-89{ background:#f4f4f4 url(../image/icon.gif) 15px -135px;}
+#result #result_remark #pic_90-100{ background:#f4f4f4 url(../image/icon.gif) 15px -70px;}
+#result #result_remark p{ line-height:22px; padding-left:80px;}
+#result #result_lesson li{ border-bottom:#adadad 1px dotted; line-height:30px; font-size:12px; padding:0 10px;}
+#result #result_btn{ clear:both; width:290px; height:31px; margin:20px auto;}
+#result #result_btn a{ display:block; width:123px; height:31px; background:url(../image/tit_bg.jpg) -380px -140px; font-size:12px; color:#fff; line-height:30px; text-align:center; float:left; margin:0 10px;}
+
+/*模拟登录、免费体验*/
+#login #login_box{ border:#e8e9e6 1px solid;}
+#login h3{ border-bottom:#e8e9e6 1px solid; background:#e9f2e9; font-size:14px; padding:8px 16px;}
+#login table{ margin:40px auto; text-align:center;}
+#login input{ width:200px; height:25px; line-height:24px; border:#b2c2d7 1px solid;}
+#login #login_btn,#login #exper_btn,#login #login02_btn{ width:67px; height:67px; background:url(../image/btn_login.jpg) 0 0; border:0; cursor:pointer;}
+#login #exper_btn{ background:url(../image/btn_login.jpg) -73px 0; }
+#login #login02_btn{ width:109px; height:35px; background:url(../image/btn_login.jpg) -141px 0; }
+#login p{ background:#efefef; font-size:12px; line-height:20px; padding:8px 16px;}
+
+/*考试须知、练习须知、考场守则、操作说明、选择科目*/
+#notice ul{ line-height:26px; margin:0 20px;}
+#notice #begin_exam,#notice #begin_exer{ text-align:center;}
+#notice #begin_exam img{ margin:0 18px;}
+#notice #exer h4{ background:#f0f0f0; padding:16px 20px; font-size:14px; margin:20px 0;}
+#notice #exer ol{ line-height:36px; margin:0 40px;}
+#notice #exer ol select{ width:170px; color:#444;}
+#notice #exer ol #exer_name{ width:350px; border:#85b1b5 1px solid; padding:2px;}
+#notice #exer ol #exer_time{ width:110px; border:#85b1b5 1px solid; padding:2px;}
+#notice #exer ol .exer_amount{ width:75px; border:#85b1b5 1px solid; padding:2px;}
+#notice #exer ol .text_in{ text-indent:84px;}
+#notice #begin_exer input{ width:144px; height:44px; background:url(../image/btn_begin_exer.jpg); border:none; margin-top:20px; cursor:pointer;}
+#notice #shouze{ height:500px;overflow-x:hidden;overflow-y:auto;}
+#notice #caozuoshuoming h3{ background:#efefef; padding:10px; text-align:center; margin-bottom:20px;}
+#notice #caozuoshuoming li{ border-bottom:#e7e8e4 1px solid; padding-bottom:10px; margin-bottom:10px;}
+#notice #xuanzekemu{ width:555px; margin:0 auto;}
+#notice #xuanzekemu a{ display:inline-block; width:233px; height:52px; background:url(../image/tit_bg.jpg) -530px -91px; margin:0 20px 20px 20px; font-size:16px; color:#fff; font-weight:bold; text-align:center; line-height:50px;}
+#notice #xuanzekemu a:hover{background:url(../image/tit_bg.jpg) -530px -39px; text-decoration:none;}
+
+.pages .alert{color: red;}
+.pages span{border: 1px solid #D6D7D1;margin: 0 5px;padding: 5px 10px;}

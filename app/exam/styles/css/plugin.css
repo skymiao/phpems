@@ -1,0 +1,14 @@
+*{font-family:"Microsoft YaHei"}
+a:hover,a:focus{text-decoration:none;}
+li,dd{line-height:2em;}
+.menu_con li,.menu-bd dd{line-height:2.5em;}
+.toolbar .btns {
+    float: right;
+}
+.toolbar .btns span {
+    border-left: 1px dotted #CCCCCC;
+    cursor: pointer;
+    margin-left: 8px;
+    padding-left: 8px;
+}
+a.current{color:red;}
